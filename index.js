@@ -10,7 +10,7 @@ app.listen(PORT,()=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send(root)
+    res.send("root")
 })
   
 let data = "This is a file containing a collection of books.";
@@ -24,4 +24,5 @@ fs.writeFile("books.txt", data, (err) => {
     console.log(fs.readFileSync("books.txt", "utf8"));
   }
 });
+
 module.exports = app
