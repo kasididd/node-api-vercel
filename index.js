@@ -7,7 +7,7 @@ app.listen(PORT,()=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send('this is my APU running....'+"<br/>"+
+    res.send('open'+"<br/>"+
     "<button> click to create files </button>")
 })
 
