@@ -1,5 +1,4 @@
 const express = require('express');
-const { get } = require('express/lib/response');
 const app = express();
 const PORT = 4000
 
