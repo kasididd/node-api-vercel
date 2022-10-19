@@ -1,0 +1,12 @@
+const express = require('express');
+const { get } = require('express/lib/response');
+const app = express();
+const PORT = 4000
+
+app.listen(PORT,()=>{
+    console.log('listening on port '+PORT);
+})
+
+app.get('/',(req,res)=>{
+    res.send('this is my APU running....')
+})
