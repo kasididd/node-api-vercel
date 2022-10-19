@@ -10,3 +10,5 @@ app.listen(PORT,()=>{
 app.get('/',(req,res)=>{
     res.send('this is my APU running....')
 })
+
+module.exports = app
