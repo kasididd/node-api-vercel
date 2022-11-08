@@ -12,7 +12,12 @@ app.listen(PORT,()=>{
 app.get('/',(req,res)=>{
     res.send("root")
 })
-  
+try {
+  const data = fs.readFileSync('/Users/joe/test.txt', 'utf8');
+  console.log(data);
+} catch (err) {
+  console.error(err);
+}
 let data = "This is a file containing a collection of books.";
   
 fs.writeFile("books.txt", data, (err) => {
