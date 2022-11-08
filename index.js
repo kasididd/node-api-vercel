@@ -13,7 +13,7 @@ app.get('/',(req,res)=>{
     res.send("root")
 })
 try {
-  const data = fs.readFileSync('/Users/joe/test.txt', 'utf8');
+  const data = fs.readFileSync('books.txt', 'utf8');
   console.log(data);
 } catch (err) {
   console.error(err);
