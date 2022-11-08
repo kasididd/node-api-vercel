@@ -10,7 +10,7 @@ app.listen(PORT,()=>{
 })
 
 app.get('/',(req,res)=>{
-    res.send("root")
+    res.send("root  " + fs.readFileSync("books.txt", "utf8"))
     console.log(fs.readFileSync("books.txt", "utf8"));
 })
 
